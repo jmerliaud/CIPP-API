@@ -1,18 +1,14 @@
 name: PR Branch Check
 
 on:
-  #### Lignes modifiées pour mises à jour automatiques
-  ###  https://docs.cipp.app/setup/self-hosting-guide/configuring-automatic-updates
-  
-  # Using pull_request_target instead of pull_request for secure handling of fork PRs
-  # pull_request_target:
+    # Using pull_request_target instead of pull_request for secure handling of fork PRs
+  pull_request_target:
     # Only run on these PR events
-    # types: [opened, synchronize, reopened]
+   types: [opened, synchronize, reopened]
     # Only check PRs targeting these branches
-    # branches:
-    #  - main
-    #  - master
-### Fin modifs (JM)
+   branches:
+      - main
+      - master
 
 
 permissions:
